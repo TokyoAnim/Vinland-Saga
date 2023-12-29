@@ -308,6 +308,15 @@ nav a:hover {
     color: #6457A6;
 }
 
+        .banner-container {
+    position: relative;
+}
+
+.trending-banner {
+    position: absolute;
+    z-index: 1;
+}
+
         </style>
     <title>Vinland Saga | Saison 1</title>
 </head>
@@ -374,17 +383,19 @@ nav a:hover {
             });
           </script>
    
-  <h1 class="trending trending-banner violet-text">
-    | Vinland Saga Saison 1
-</h1>
+  <div class="banner-container">
+    <h1 class="trending trending-banner violet-text">
+        | Vinland Saga Saison 1
+    </h1>
 
-<div class="dropdown-container">
-    <label for="season-select" class="button-label">Saison:</label>
-    <select id="season-select" class="button-select" onchange="changeSeason()">
-        <option value="season1">Saison 1</option>
-        <option value="season2">Saison 2</option>
-        <!-- Ajoutez d'autres saisons au besoin -->
-    </select>
+    <div class="dropdown-container">
+        <label for="season-select" class="button-label">Saison:</label>
+        <select id="season-select" class="button-select" onchange="changeSeason()">
+            <option value="season1">Saison 1</option>
+            <option value="season2">Saison 2</option>
+            <!-- Ajoutez d'autres saisons au besoin -->
+        </select>
+    </div>
 </div>
 
 
