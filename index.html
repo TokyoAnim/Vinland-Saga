@@ -275,7 +275,7 @@ nav a:hover {
   display: block;
 }
 
-     ..button-label {
+    .button-label {
     display: block;
     margin-bottom: 8px;
     font-size: 18px;
@@ -288,7 +288,7 @@ nav a:hover {
     font-size: 16px;
     border: 1px solid #6457A6; /* Bordure violette */
     border-radius: 8px;
-    width: 100%;
+    width: 200px; /* Ajustez la largeur selon vos besoins */
     box-sizing: border-box;
     background-color: #6457A6; /* Fond violette */
     color: white;
@@ -301,6 +301,7 @@ nav a:hover {
     background-color: #6457A6; /* Fond violette */
     color: white;
 }
+
 
 
         .violet-text {
@@ -377,18 +378,15 @@ nav a:hover {
     | Vinland Saga Saison 1
 </h1>
 
-
-
-
-<div class="row ">
-    <div class="column">
+<div class="dropdown-container">
     <label for="season-select" class="button-label">Saison:</label>
-    <select id="season-select" class="button-select">
+    <select id="season-select" class="button-select" onchange="changeSeason()">
         <option value="season1">Saison 1</option>
         <option value="season2">Saison 2</option>
         <!-- Ajoutez d'autres saisons au besoin -->
     </select>
 </div>
+
 
 
         </h1>
