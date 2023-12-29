@@ -275,31 +275,22 @@ nav a:hover {
   display: block;
 }
 
-    .button-label {
+ .button {
     display: block;
-    margin-bottom: 8px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #6457A6; /* Couleur violette */
-}
-
-.button-select {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #6457A6; /* Bordure violette */
+    background-color: #6457A6;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
     border-radius: 8px;
-    width: 200px; /* Ajustez la largeur selon vos besoins */
+    width: 100%;
     box-sizing: border-box;
-    background-color: #6457A6; /* Fond violette */
-    color: white;
     font-family: 'Rubik', sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-/* Styles pour les options du menu déroulant */
-.button-select option {
-    background-color: #6457A6; /* Fond violette */
-    color: white;
+.button:hover {
+    background-color: #483C75;
 }
 
 
@@ -308,14 +299,6 @@ nav a:hover {
     color: #6457A6;
 }
 
-        .banner-container {
-    position: relative;
-}
-
-.trending-banner {
-    position: absolute;
-    z-index: 1;
-}
 
         </style>
     <title>Vinland Saga | Saison 1</title>
@@ -332,7 +315,7 @@ nav a:hover {
             <li class="logo"> <a href="https://tokyoanim.github.io/TokyoAnime/"> TokyoAnime</a></li>
         </ul>
     
-        <hr class="rounded">
+        
 
        
 
@@ -387,16 +370,15 @@ nav a:hover {
     <h1 class="trending trending-banner violet-text">
         | Vinland Saga Saison 1
     </h1>
-
-    <div class="dropdown-container">
-        <label for="season-select" class="button-label">Saison:</label>
-        <select id="season-select" class="button-select" onchange="changeSeason()">
-            <option value="season1">Saison 1</option>
-            <option value="season2">Saison 2</option>
-            <!-- Ajoutez d'autres saisons au besoin -->
-        </select>
-    </div>
+<hr class="rounded">
+    <div class="column">
+    <a href="https://TokyoAnim.github.io/Vinland-Saga/" class="button">Saison 1</a>
 </div>
+<div class="column">
+    <a href="https://TokyoAnim.github.io/Vinland-Saga-Saison-2/" class="button">Saison 2</a>
+</div>
+
+
 
 
 
