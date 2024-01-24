@@ -12,17 +12,19 @@
 
 /* Ajoutez cette règle pour la bande d'image au fond */
 .trending-banner {
-    background-image: url('vinland-saga.webp'); /* Remplacez 'chemin/vers/votre/image.jpg' par le chemin de votre image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20px; /* Ajoutez un peu de marge intérieure pour améliorer la lisibilité du texte */
-}
+            background-image: url('vinland-saga.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20px; /* Ajustez la valeur de la marge intérieure selon vos besoins */
+            text-align: center; /* Pour centrer le contenu si nécessaire */
+        }
 
-.trending {
-    color: #000; /* Texte en noir */
-    font-family: 'Rubik', sans-serif;
-}
+        .trending {
+            color: #6457A6;
+            font-family: 'Rubik', sans-serif;
+            margin-top: 20px; /* Ajoute de l'espace entre la bannière et le titre */
+        }
         
        .dropdown-container {
     margin: 20px 0 20px 20px;
@@ -340,7 +342,13 @@ nav a:hover {
               }
             });
           </script>
-   
+
+   <body>
+    <div class="trending-banner">
+        <!-- Contenu de votre bannière -->
+        <hr class="rounded">
+    </div>y>
+
 
               
   <h1 class="trending">
@@ -363,8 +371,7 @@ nav a:hover {
 </div>
         </h1>
  <hr class="rounded">
-          <h1 class="trending-banner">
-    <hr class="rounded">
+         
 
 <div class="dropdown-container">
     <label for="episode-select">Sélectionnez un épisode:</label>
