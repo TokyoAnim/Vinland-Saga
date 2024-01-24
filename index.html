@@ -280,7 +280,7 @@ nav a:hover {
         /* Styles pour le menu déroulant des saisons */
     .season-selector {
         margin: 20px 0;
-        text-align: center;
+       
     }
 
     .season-selector label {
@@ -403,7 +403,7 @@ nav a:hover {
     <div class="season-selector">
       
 
-        <button onclick="previousSeason()">Saison précédente</button>
+        <button onclick="previousSeason()"><<</button>
         
           <label for="season-select"></label>
         <select id="season-select" onchange="redirectToSeason()">
@@ -412,7 +412,7 @@ nav a:hover {
             <!-- Ajoutez d'autres saisons au besoin -->
         </select>
         
-        <button onclick="nextSeason()">Saison suivante</button>
+        <button onclick="nextSeason()">>></button>
     </div>
 
 
