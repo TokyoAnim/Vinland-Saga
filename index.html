@@ -406,7 +406,7 @@ nav a:hover {
         <button onclick="previousSeason()"><<</button>
         
           <label for="season-select"></label>
-        <select id="season-select" onchange="redirectToSeason()">
+        <select id="season-select" onchange="updateSeasonLink()">
             <option value="1">Saison 1</option>
             <option value="2">Saison 2</option>
             <!-- Ajoutez d'autres saisons au besoin -->
@@ -415,6 +415,11 @@ nav a:hover {
         <button onclick="nextSeason()">>></button>
     </div>
 
+    <div id="season-container">
+        <!-- Ici seront affichés les liens des saisons -->
+        <!-- Par exemple, un lien initial vers la saison 1 -->
+        <a id="season-link" href="https://tokyoanim.github.io/Vinland-Saga/">Saison 1</a>
+    </div>
 
 
 
@@ -560,11 +565,14 @@ nav a:hover {
 
         <script>
 
-function redirectToSeason() {
+ function updateSeasonLink() {
             var select = document.getElementById("season-select");
             var selectedSeason = select.options[select.selectedIndex].value;
-            // Rediriger vers la page correspondante à la saison sélectionnée
-            window.location.href = "saison" + selectedSeason + ".html";
+            var seasonLink = document.getElementById("season-link");
+            
+            // Mettre à jour l'URL du lien en fonction de la saison sélectionnée
+            seasonLink.href = "saison" + selectedSeason + ".html";
+            document.getElementById("selectedSeason").innerText = selectedSeason;
         }
 
         function previousSeason() {
@@ -572,7 +580,7 @@ function redirectToSeason() {
             var currentIndex = select.selectedIndex;
             if (currentIndex > 0) {
                 select.selectedIndex = currentIndex - 1;
-                redirectToSeason();
+                updateSeasonLink();
             }
         }
 
@@ -581,7 +589,7 @@ function redirectToSeason() {
             var currentIndex = select.selectedIndex;
             if (currentIndex < select.options.length - 1) {
                 select.selectedIndex = currentIndex + 1;
-                redirectToSeason();
+                updateSeasonLink();
             }
         }
             
