@@ -356,14 +356,15 @@ nav a:hover {
     </h1>
 
     <div class="season-selector">
-        <label for="season-select">Sélectionnez une saison:</label>
+      
+
+        <button onclick="previousSeason()">Saison précédente</button>
+          <label for="season-select">Sélectionnez une saison:</label>
         <select id="season-select" onchange="redirectToSeason()">
             <option value="1">Saison 1</option>
             <option value="2">Saison 2</option>
             <!-- Ajoutez d'autres saisons au besoin -->
         </select>
-
-        <button onclick="previousSeason()">Saison précédente</button>
         <button onclick="nextSeason()">Saison suivante</button>
     </div>
 
