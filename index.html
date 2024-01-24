@@ -277,6 +277,51 @@ nav a:hover {
   display: block;
 }
 
+        /* Styles pour le menu déroulant des saisons */
+    .season-selector {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .season-selector label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff; /* Texte en blanc */
+    }
+
+    #season-select {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 200px;
+        margin-bottom: 20px;
+        background-color: #000; /* Fond noir */
+        color: #fff; /* Texte en blanc */
+        font-family: 'Rubik', sans-serif; /* Police Rubik */
+    }
+
+    /* Styles pour les options du menu déroulant des saisons */
+    #season-select option {
+        background-color: #000; /* Fond noir */
+        color: #fff; /* Texte en blanc */
+    }
+
+    .season-selector button {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-left: 10px;
+        background-color: #000; /* Fond noir */
+        color: #fff; /* Texte en blanc */
+        cursor: pointer;
+    }
+
+    /* Ajoutez d'autres styles au besoin */
+
         </style>
     <title>Vinland Saga | Saison 1</title>
 </head>
@@ -359,12 +404,14 @@ nav a:hover {
       
 
         <button onclick="previousSeason()">Saison précédente</button>
-          <label for="season-select">Sélectionnez une saison:</label>
+        
+          <label for="season-select"></label>
         <select id="season-select" onchange="redirectToSeason()">
             <option value="1">Saison 1</option>
             <option value="2">Saison 2</option>
             <!-- Ajoutez d'autres saisons au besoin -->
         </select>
+        
         <button onclick="nextSeason()">Saison suivante</button>
     </div>
 
