@@ -405,12 +405,13 @@ nav a:hover {
 
         <button onclick="previousSeason()"><<</button>
         
-          <label for="season-select"></label>
-        <select id="season-select" onchange="updateSeasonLink()">
-          <option value="1">Saison 1 href="https://tokyoanim.github.io/Vinland-Saga/"</option> 
-          <option value="2">Saison 2 href="https://tokyoanim.github.io/Vinland-Saga-Saison-2/</option>
-            <!-- Ajoutez d'autres saisons au besoin -->
-        </select>
+         <label for="season-select">Sélectionnez une saison:</label>
+<select id="season-select" onchange="updateSeasonLink()">
+    <option value="1"><a href="https://tokyoanim.github.io/Vinland-Saga/">Saison 1</a></option>
+    <option value="2"><a href="https://tokyoanim.github.io/Vinland-Saga-Saison-2/">Saison 2</a></option>
+    <!-- Ajoutez d'autres saisons au besoin -->
+</select>
+
         
         <button onclick="nextSeason()">>></button>
     </div>
