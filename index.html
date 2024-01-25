@@ -322,6 +322,23 @@ nav a:hover {
 
     /* Ajoutez d'autres styles au besoin */
 
+
+        select {
+margin: 0;
+padding-left: 15px;
+color: #555555;
+cursor: pointer;
+}
+.select {
+position: relative;
+width: 100%;
+height: 45px;
+border-radius: 5px;
+border: 1px solid #CED4DA;
+}
+
+
+
         </style>
     <title>Vinland Saga | Saison 1</title>
 </head>
@@ -405,8 +422,7 @@ nav a:hover {
 
         <button onclick="previousSeason()"><<</button>
         
-         <label for="season-select">Sélectionnez une saison:</label>
-<select id="season-select" onchange="updateSeasonLink()">
+<select name= »Choix » onChange= »location.href= »+this.options[this.selectedIndex].value+ »; »>
     <option value= »https://tokyoanim.github.io/Vinland-Saga-Saison-2/″>CHOIX 1</option>
 <option value= »https://tokyoanim.github.io/Vinland-Saga/″>CHOIX  2</option>
     <!-- Ajoutez d'autres saisons au besoin -->
