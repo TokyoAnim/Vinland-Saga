@@ -426,12 +426,13 @@ select {
       
 
       <div class="season-selector">
-    <label for="season-select">Sélectionnez une saison:</label>
-    <select id="season-select" onchange="updateSeasonLink()" class="season-select">
-        <option value="https://tokyoanim.github.io/Vinland-Saga/" class="season-option">Saison 1</option>
-        <option value="https://tokyoanim.github.io/Vinland-Saga-Saison-2/" class="season-option">Saison 2</option>
-        <!-- Ajoutez d'autres saisons au besoin -->
-    </select>
+   <select name="Choix" onChange="location.href=this.options[this.selectedIndex].value;">
+  <option value="">Choisissez une option</option>
+  <option value="https://www.bing.com/">Bing</option>
+  <option value="https://www.google.com/">Google</option>
+  <option value="https://www.yahoo.com/">Yahoo</option>
+</select>
+      </div>
 
     <button onclick="previousSeason()" class="season-button">Saison précédente</button>
     <button onclick="nextSeason()" class="season-button">Saison suivante</button>
