@@ -322,20 +322,21 @@ nav a:hover {
 
     /* Ajoutez d'autres styles au besoin */
 
+select {
+  margin: 0;
+  padding-left: 15px;
+  color: #555555;
+  cursor: pointer;
+}
 
-        select {
-margin: 0;
-padding-left: 15px;
-color: #555555;
-cursor: pointer;
-}
 .select {
-position: relative;
-width: 100%;
-height: 45px;
-border-radius: 5px;
-border: 1px solid #CED4DA;
+  position: relative;
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid #CED4DA;
 }
+
 
 
 
@@ -422,12 +423,14 @@ border: 1px solid #CED4DA;
 
         <button onclick="previousSeason()"><<</button>
         
-<select name= »Choix » onChange= »location.href= »+this.options[this.selectedIndex].value+ »; »>
-    <option value= »https://tokyoanim.github.io/Vinland-Saga-Saison-2/″>CHOIX 1</option>
-<option value= »https://tokyoanim.github.io/Vinland-Saga/″>CHOIX  2</option>
-    <!-- Ajoutez d'autres saisons au besoin -->
-</select>
 
+
+<select name="Choix" onChange="location.href=this.options[this.selectedIndex].value;">
+  <option value="">Choisissez une option</option>
+  <option value="https://www.bing.com/">Bing</option>
+  <option value="https://www.google.com/">Google</option>
+  <option value="https://www.yahoo.com/">Yahoo</option>
+</select>
         
         <button onclick="nextSeason()">>></button>
     </div>
